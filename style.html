@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Continental Hotel Reservation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#ffffff;
+        }
+
+        .form-container {
+            width: 500px;
+            margin: 30px auto;
+            border: 2px solid #8e8e8e;
+            background-color: rgba(7, 168, 249, 0.379);
+            box-shadow: 0 0 10px rgba(0,0,0,10);
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;  /* no gaps between cells */
+        }
+
+        td {
+            border: 2px solid #000000;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        td.label {
+            width: 160px;
+            background-color: #09abe7;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 95%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            background-color: #e9f0f8;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .button-row {
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #f0f0f0;
+            padding: 8px 20px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Continental Hotel Reservation Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Name</td>
+                    <td><input type="text" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td class="label">eMail</td>
+                    <td><input type="email" value="e.g info@continental.pk" required></td>
+                </tr>
+                <tr>
+                    <td class="label">Mobile No</td>
+                    <td><input type="tel" placeholder="Enter your cell number" required></td>
+                </tr>
+                <tr>
+                    <td class="label">Arrival Time</td>
+                    <td><input type="text" placeholder="Enter your arrival time" required></td>
+                </tr>
+                <tr>
+                    <td class="label">Departure</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td class="label">Room Type</td>
+                    <td class="options">
+                        <label><input type="radio" name="room" required> Single</label>
+                        <label><input type="radio" name="room"> Double</label>
+                        <label><input type="radio" name="room"> Presidential Suite</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Preferences</td>
+                    <td class="options">
+                        <label><input type="checkbox"> Non-Smoking</label>
+                        <label><input type="checkbox"> Internet</label>
+                        <label><input type="checkbox"> Firm Mattress</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Mode of Payment</td>
+                    <td class="options">
+                        <label><input type="checkbox"> Cash</label>
+                        <label><input type="checkbox"> Check</label>
+                        <label><input type="checkbox"> Credit Card</label>
+                        <select>
+                            <option>Select Card</option>
+                            <option>Visa</option>
+                            <option>MasterCard</option>
+                            <option>American Express</option>
+                            <option>HBL card</option>
+                            <option>National bank card</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="button-row">
+                <button type="submit">Send Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
